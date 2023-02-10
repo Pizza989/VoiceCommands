@@ -1,0 +1,20 @@
+{
+    "models": {
+        "tts": {
+            "rel_path": "tts_models/de/thorsten/tacotron2-DDC",
+            "sample_rate": 22050
+        },
+        "stt": {
+            "rel_path": "models/de/model.pbmm",
+            "sample_rate": 16000,
+            "scorer": "models/de/de-aashishag-1-prune-kenlm.scorer"
+        }
+    },
+    "recognition": {
+        "talking_threshold": 2000,
+        "accuracy": 2.5
+    },
+    "scoring": {
+        "required_comparison_ratio": 0.7
+    }
+}

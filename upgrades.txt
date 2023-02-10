@@ -1,0 +1,17 @@
+STT:
+    * look to manage the model yourself
+TTS:
+    * raise pitch when asking questions
+Scoring:
+    * consider ambigous options
+Dialog:
+    * multi language support
+    * optional arg confirm for commands
+Other:
+    - implement event handling
+        - each event gets an id
+        - on event do smth in python code
+    * logging (syslog)
+    * build a package (obs)
+Config:
+    * config integrity checker

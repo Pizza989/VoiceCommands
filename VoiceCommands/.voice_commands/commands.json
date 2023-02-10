@@ -1,0 +1,48 @@
+{
+    "events": [
+        {
+            "id": "0",
+            "options": [
+                {
+                    "id": "01",
+                    "keywords": [["wohnzimmer", 1]]
+                },
+                {
+                    "id": "02",
+                    "keywords": [["küche", 1]]
+                }
+            ],
+            "keywords": [
+                ["licht", 0.5],
+                ["aus", 0.5],
+                ["ausschalten", 0.7]
+            ]
+        },
+        {
+            "id": "1",
+            "keywords": [
+                ["licht", 0.5],
+                ["an", 0.5],
+                ["anschalten", 0.7]
+            ]
+        }
+    ],
+    "commands": {
+        "unrecognised": {
+            "name": "Unrecognised",
+            "text": "Das habe ich leider nicht verstanden"
+        },
+        "0": {
+            "name": "Licht aus",
+            "text": "Welches Licht wollen Sie ausschalten?"
+        },
+        "01": {
+            "name": "Wohnzimmer Auswahl",
+            "text": "Ich schalte das Wohnzimmer Licht aus"
+        },
+        "02": {
+            "name": "Küchen Auswahl",
+            "text": "Ich schalte das Küchen Licht aus"
+        }
+    }
+}
