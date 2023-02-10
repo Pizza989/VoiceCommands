@@ -17,8 +17,8 @@ with open(".voice_commands/commands.json", "r", encoding="utf-8") as file:
 
 class Listener(Model):
     def __init__(self, *args, **kwargs):
-        super().__init__(*args, config["models"]["stt"]["rel_path"], **kwargs)
-        _ = config["models"]["stt"]["scorer"]
+        super().__init__(*args, config["models"]["stt"]["path"], **kwargs)
+        _ = config["models"]["stt"]["scorer_path"]
         self.enableExternalScorer(_) if _ else None
         self.__is_talking = False
         self.__silence_duration = 0
@@ -73,7 +73,7 @@ class Listener(Model):
 class Speaker(TTS):
     def __init__(self, *args, **kwargs):
         super().__init__(
-            *args, config["models"]["tts"]["rel_path"], True, **kwargs
+            *args, config["models"]["tts"]["model_id"], True, **kwargs
         )
 
     def say(self, txt: str):

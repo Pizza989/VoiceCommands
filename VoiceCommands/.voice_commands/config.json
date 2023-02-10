@@ -1,13 +1,13 @@
 {
     "models": {
         "tts": {
-            "rel_path": "tts_models/de/thorsten/tacotron2-DDC",
+            "model_id": "tts_models/de/thorsten/tacotron2-DDC",
             "sample_rate": 22050
         },
         "stt": {
-            "rel_path": "models/de/model.pbmm",
+            "path": "models/de/model.pbmm",
             "sample_rate": 16000,
-            "scorer": "models/de/de-aashishag-1-prune-kenlm.scorer"
+            "scorer_path": "models/de/de-aashishag-1-prune-kenlm.scorer"
         }
     },
     "recognition": {

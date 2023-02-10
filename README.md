@@ -1,7 +1,10 @@
 # VoiceCommands
 
-This is Work in Progress and will be updated whenever I feel like it.
+>This is Work in Progress and will be updated whenever I feel like it.
 
+Voice Commands uses the TTS and stt python modules and therefore supports the same models as those.
+* Free speech to text models can be found [here](https://coqui.ai/models).
+* Regarding text to speech, after installing all dependecies just execute ```tts --list_models``` to see a list of ids that can be used in voice commands config
 ## Features
 
 ### Implemented
@@ -49,13 +52,13 @@ The text will be said by the assistant if it's not an empty string
 
 ```json
 "tts": {            (contains data about the text-to-speech model)
-    "rel_path":     (id of the model according to tts module)
+    "model_id":     (id of the model according to tts module)
     "sample_rate":  (sample rate of the model)
 },
 "stt": {            (contains data about the speech-to-text model)
-    "rel_path":     (path of the model relative to core.py)
+    "path":     (path of the model relative to core.py)
     "sample_rate":  (sample rate of the model)
-    "scorer":       (optional scorer for the recognition)
+    "scorer_path":       (optional scorer for the recognition)
 }
 ```
 

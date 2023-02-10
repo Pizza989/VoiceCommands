@@ -1,2 +1,0 @@
-updated gitignore
-scorer is not optional in config

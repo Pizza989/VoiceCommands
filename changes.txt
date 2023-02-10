@@ -1,4 +1,0 @@
-Updated config naming
-Updated README
-Code cleanup
-Custom Exceptions
